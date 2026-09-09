@@ -1,0 +1,170 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黒柴カフェ</title>
+
+  <style>
+    /* 全体 */
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+
+      /* 固定フッターと重ならないように余白を確保 */
+      padding-bottom: 150px;
+    }
+
+    /* header */
+    header {
+      background-color: #66FFFF;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    /* main */
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #CCFFFF;
+    }
+
+    section {
+      background-color: white;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      border-left: 5px solid #CCFFFF;
+      padding-left: 10px;
+    }
+
+    /* footer */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      background-color: #66FFFF;
+      color: white;
+      padding: 15px 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    footer p {
+      margin: 3px 0;
+    }
+
+    /* ソーシャルメディアリンク */
+    .social {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .social a:hover {
+      text-decoration: underline;
+    }
+
+    .copyright {
+      font-size: 14px;
+    }
+
+    /* スマートフォン対応 */
+    @media (max-width: 600px) {
+      footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+      }
+
+      body {
+        padding-bottom: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <h1>黒柴カフェ</h1>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main>
+
+    <section>
+      <h2>かわいい黒柴に会える</h2>
+      <p>
+        黒柴と触れ合えるカフェです。
+        カフェについての情報を紹介します。
+      </p>
+    </section>
+
+    <section>
+      <h2>サービス紹介</h2>
+      <p>
+        黒柴たちに触れ合いながら楽しくお茶できます。
+        詳しくは、インスタグラムやXをご確認ください。
+      </p>
+    </section>
+
+  </main>
+
+  <!-- フッター -->
+  <footer>
+
+    <div class="contact">
+      <p>お問い合わせ：info@example.com</p>
+      <p>電話：03-1234-5678</p>
+    </div>
+
+    <div class="social">
+      <a href="#" target="_blank">X</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">Facebook</a>
+    </div>
+
+    <p class="copyright">
+      &copy; 2026 Example Website
+    </p>
+
+  </footer>
+
+</body>
+</html>
+```
